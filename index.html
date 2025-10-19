@@ -1,94 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Go Miles | Tours & Travels</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Go Miles — Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Go Miles Tours</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <div class="navbar container">
+      <div class="brand">Go Miles</div>
+      <button id="navToggle" class="btn-outline" style="display:none">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Discover the Beauty of the Eastern Himalayas</h2>
-      <p>Explore Sikkim, Darjeeling, Bhutan & Dooars with our curated travel experiences.</p>
-      <button id="exploreBtn">Explore Packages</button>
-    </div>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <h1>Explore Sikkim, Darjeeling, Bhutan & Dooars</h1>
+      <p>Curated journeys through the Eastern Himalayas — gentle treks, cultural experiences, tea gardens and wildlife safaris.</p>
+      <div style="margin-top:1rem;">
+        <a class="btn" href="packages.html">View Packages</a>
+        <a class="btn-outline" href="contact.html">Quick Enquiry</a>
+      </div>
+    </section>
 
-  <section id="destinations">
-    <h2>Top Destinations</h2>
-    <div class="dest-grid">
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1589187386819-3e022e6b3b9a?auto=format&fit=crop&w=800&q=80" alt="Sikkim" />
-        <h3>Sikkim</h3>
-        <p>Majestic mountains, monasteries, and serene lakes await your journey.</p>
+    <section class="section">
+      <h2>Featured Destinations</h2>
+      <div class="grid grid-2" style="margin-top:1rem;">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1589187386819-3e022e6b3b9a?auto=format&fit=crop&w=1200&q=80" alt="Sikkim">
+          <h3>Sikkim</h3>
+          <p>Monasteries, alpine lakes like Tsomgo and Gurudongmar, and panoramic mountain views.</p>
+          <div style="margin-top:.5rem;"><a class="btn" href="packages.html#sikkim">Explore Sikkim</a></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1565648260538-1e84a4b3a3c5?auto=format&fit=crop&w=1200&q=80" alt="Darjeeling">
+          <h3>Darjeeling</h3>
+          <p>Tea gardens, the Darjeeling Himalayan Railway, and majestic sunrise views of Kanchenjunga.</p>
+          <div style="margin-top:.5rem;"><a class="btn" href="packages.html#darjeeling">Explore Darjeeling</a></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1562619671-3d87b07a5d22?auto=format&fit=crop&w=1200&q=80" alt="Bhutan">
+          <h3>Bhutan</h3>
+          <p>Spiritual monasteries, fortress-dzongs and pristine Himalayan culture in the Kingdom of Bhutan.</p>
+          <div style="margin-top:.5rem;"><a class="btn" href="packages.html#bhutan">Explore Bhutan</a></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1613588874177-cbf40d3135c0?auto=format&fit=crop&w=1200&q=80" alt="Dooars">
+          <h3>Dooars</h3>
+          <p>Lush foothills, wildlife sanctuaries like Jaldapara and Gorumara, and river valleys to explore.</p>
+          <div style="margin-top:.5rem;"><a class="btn" href="packages.html#dooars">Explore Dooars</a></div>
+        </div>
       </div>
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1565648260538-1e84a4b3a3c5?auto=format&fit=crop&w=800&q=80" alt="Darjeeling" />
-        <h3>Darjeeling</h3>
-        <p>Tea gardens, toy trains, and the view of Kanchenjunga at sunrise.</p>
-      </div>
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1562619671-3d87b07a5d22?auto=format&fit=crop&w=800&q=80" alt="Bhutan" />
-        <h3>Bhutan</h3>
-        <p>The Land of Happiness with stunning monasteries and pure mountain air.</p>
-      </div>
-      <div class="dest-card">
-        <img src="https://images.unsplash.com/photo-1613588874177-cbf40d3135c0?auto=format&fit=crop&w=800&q=80" alt="Dooars" />
-        <h3>Dooars</h3>
-        <p>Wildlife, lush forests, and rivers — nature at its finest.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="packages">
-    <h2>Popular Packages</h2>
-    <div class="package-grid">
-      <div class="package-card">
-        <h3>Sikkim & Darjeeling Delight</h3>
-        <p>6 Days / 5 Nights – ₹24,999 per person</p>
-        <button>View Details</button>
+    <section class="section">
+      <h2>Why Travel With Us</h2>
+      <div class="grid grid-2" style="margin-top:1rem;">
+        <div class="card">
+          <h3>Local Experts</h3>
+          <p>We work with local guides and partners to craft authentic itineraries.</p>
+        </div>
+        <div class="card">
+          <h3>Small Group Sizes</h3>
+          <p>Personalized experiences and responsible travel practices.</p>
+        </div>
       </div>
-      <div class="package-card">
-        <h3>Bhutan Bliss</h3>
-        <p>7 Days / 6 Nights – ₹29,999 per person</p>
-        <button>View Details</button>
-      </div>
-      <div class="package-card">
-        <h3>Dooars Jungle Safari</h3>
-        <p>4 Days / 3 Nights – ₹18,999 per person</p>
-        <button>View Details</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Plan your next Himalayan getaway today!</p>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Go Miles Tours | Crafted with love for the mountains</p>
+    <div class="container">
+      <p>© 2025 Go Miles · Sikkim · Darjeeling · Bhutan · Dooars</p>
+    </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
